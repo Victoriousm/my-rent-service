@@ -1,5 +1,19 @@
-const Setting ={
-    rentOffersCount: 312,
+const Setting = {
+    rentOffersCount: 312
 } as const;
 
-export {Setting};
+const AppRoute = {
+    Main: '/'
+    ,Login: '/login',
+    Favorites:'/favorites',
+    Offer:'/offer/:id'
+
+}
+
+const AuthorizationStatus={
+    Auth: 'AUTH',
+    NoAuth: 'NO_AUTH',
+    Unkown: 'UNKOWN'
+}
+
+export {Setting, AppRoute, AuthorizationStatus};

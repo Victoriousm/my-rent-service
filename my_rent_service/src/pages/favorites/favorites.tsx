@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Favorites() {
   return (
@@ -165,9 +166,9 @@ function Favorites() {
         </div>
       </main>
       <footer className="footer container">
-        <a className="footer__logo-link" href="main.html">
-          <img className="footer__logo" src="img/logo.svg" alt="Rent service logo" width="64" height="33"/>
-        </a>
+      <Link to='/' className="header__logo-link header__logo-link--active">
+            <img className="header__logo" src ="img/logo.svg" alt="6 cities logo" width="81"/>
+        </Link>
       </footer>
     </div>
   )
